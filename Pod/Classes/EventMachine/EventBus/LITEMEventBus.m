@@ -8,7 +8,7 @@
 
 #import "LITEMEventBus.h"
 
-@interface LITEMEventBus()
+@interface LITEMEventBus() <LITEMBaseListenerEventGenerator>
 
 @property (nonatomic, strong) NSArray *listeners;
 
@@ -34,6 +34,7 @@
 
 - (void)subscribeListener:(LITEMBaseListener *)listener onEvent:(LITEMEventBase *)event {
 
+    listener.generator = self;
     self.listeners = [self.listeners arrayByAddingObject:listener];
 
     // add to notification center
@@ -79,6 +80,12 @@
 
 - (void)dealloc {
     [self unsubscribeAll];
+}
+
+#pragma mark - Delegates / Listener Event Generator
+
+- (LITEMEventBase *)eventWithType:(NSString *)type {
+    return [self.eventFactory eventWithType:type];
 }
 
 @end

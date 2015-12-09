@@ -19,12 +19,19 @@
 
 @end
 
+@protocol LITEMBaseListenerEventGenerator <NSObject>
+
+- (LITEMEventBase *)eventWithType:(NSString *)type;
+
+@end
+
 @interface LITEMBaseListener : NSObject<LITEMBaseListenerProtocol>
 
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic, readonly) NSString *type;
 @property (copy, nonatomic) void (^completionBlock)(NSNotification *notification);
 @property (weak, nonatomic) id<LITEMBaseListenerProtocol> delegate;
+@property (weak, nonatomic) id<LITEMBaseListenerEventGenerator> generator;
 
 #pragma mark - Equality
 - (BOOL)isEqualToListener:(LITEMBaseListener *)listener;

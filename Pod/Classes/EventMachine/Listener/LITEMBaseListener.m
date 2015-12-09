@@ -33,7 +33,7 @@
         event = notification.object;
     }
     else {
-        event = [LITEMBaseEventFactory eventWithType:notification.name];
+        event = [self.generator eventWithType:notification.name];
     }
 
     NSLog(@"%@, notification name: %@, event: %@ captured!\n send it to %@", NSStringFromClass(self.class), notification.name, event, self.delegate);
