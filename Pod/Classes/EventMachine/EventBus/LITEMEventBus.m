@@ -47,7 +47,7 @@
 }
 
 - (void)subscribeListener:(LITEMBaseListener *)listener onEventWithType:(NSString *)type {
-    [self subscribeListener:listener onEvent:[LITEMBaseEventFactory eventWithType:type]];
+    [self subscribeListener:listener onEvent:[self.eventFactory eventWithType:type]];
 }
 
 - (void)unsubscribeListener:(LITEMBaseListener *)listener {
@@ -74,7 +74,7 @@
 }
 
 - (void)fireEventWithType:(NSString *)type {
-    [self fireEvent:[LITEMBaseEventFactory eventWithType:type]];
+    [self fireEvent:[self.eventFactory eventWithType:type]];
 }
 
 - (void)dealloc {
