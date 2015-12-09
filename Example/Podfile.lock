@@ -1,0 +1,14 @@
+PODS:
+  - LITEventMachine (0.0.1)
+
+DEPENDENCIES:
+  - LITEventMachine (from `../`)
+
+EXTERNAL SOURCES:
+  LITEventMachine:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LITEventMachine: 6161544c9d1d6ef3bdc925b22b54d8be6fc7ddde
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1318113FCF3A48A4B4898813483354AC /* LITEMEventMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2303837DCF5BE9BE77A0E80A888DAEDD /* LITEMEventMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14585DCE01CCBBE7B291413D708975B2 /* LITEMBaseListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 254A3E12D947F253D1BDB71BFD014827 /* LITEMBaseListener.m */; };
+		1A7B99B72755957E90BB4C8F968F22E2 /* LITEventMachine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB09CF1E36E55C830352A3D48CCE1F2B /* LITEventMachine-dummy.m */; };
+		1D29BAD7BCD776F66C4525855D8583BC /* LITEMEventBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 044DEF3D7A8F61F98DD241CF6CD38F6D /* LITEMEventBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55AFE4E996005EF130C1DAA56BB1439D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		5B1BE72E9816D64C90A44A85A9485915 /* LITEMBaseEventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F587330BB1D5BA5517012B05ADB7D3 /* LITEMBaseEventFactory.m */; };
+		5F39D81344562649C5751F0CD7EC9692 /* Pods-LITEventMachine_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DE9E6FC46CA2CCAA8AE4F92B3308A4 /* Pods-LITEventMachine_Example-dummy.m */; };
+		7084F98B4769AE49C67519DA2FB194C3 /* LITEMEventBus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F31156FE7522D2E5B6E7446F1755FA6 /* LITEMEventBus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82BB8A740931DEC711108ECD07E92C84 /* LITEMEventBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 80430F9E435C4A8139F88AD4779132ED /* LITEMEventBus.m */; };
+		8A185731F8E1D75D468F0F416F19B2C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		9AAEBB9C71A5F87CE90ECAAEB01F2CA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		9BCFD9790D1E66105D62D9C56BA024C5 /* LITEMEventBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC809E0964DB0BFB50404F961E91ED /* LITEMEventBase.m */; };
+		B17973856C111DF1B10C72CB83B4092B /* LITEMEventMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 372286B649915C8496208F8969AB2738 /* LITEMEventMachine.m */; };
+		E1432850F6C00FB95B75A934FF37AF04 /* Pods-LITEventMachine_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14258D364EE3DB26571F80080890B63A /* Pods-LITEventMachine_Tests-dummy.m */; };
+		EE1232F121F243F7EA1295ECB0ACBC27 /* LITEMBaseListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 770306E1515330F6AA4BFD3D9E776846 /* LITEMBaseListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F11B655539A896E4ECCF425CAD01EC22 /* LITEMBaseEventFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3B676951786C02548BFAB6ABF3508D /* LITEMBaseEventFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		532EC0ED56BB9AB6B7304C0D91BD8CDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCDD6D23BE35D48C942FEA070E338746;
+			remoteInfo = LITEventMachine;
+		};
+		A8EF02DF40BB2E3325CC30DDC617DAEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCDD6D23BE35D48C942FEA070E338746;
+			remoteInfo = LITEventMachine;
+		};
+		BCBDCEAD6D4FD0E874247CF0187F2C03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0604F604445E39198EA15EC706204B51;
+			remoteInfo = "LITEventMachine-LITEventMachine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044DEF3D7A8F61F98DD241CF6CD38F6D /* LITEMEventBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LITEMEventBase.h; sourceTree = "<group>"; };
+		04B1B008D025DED44F61E8A09C501AF9 /* Pods-LITEventMachine_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LITEventMachine_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0B668DAEB1ECED6BF024DC8F80DD4D24 /* Pods-LITEventMachine_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LITEventMachine_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		14258D364EE3DB26571F80080890B63A /* Pods-LITEventMachine_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LITEventMachine_Tests-dummy.m"; sourceTree = "<group>"; };
+		1524C1EFC8999301CFE9CEA30C09EC7C /* Pods-LITEventMachine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LITEventMachine_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1F31156FE7522D2E5B6E7446F1755FA6 /* LITEMEventBus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LITEMEventBus.h; sourceTree = "<group>"; };
+		2303837DCF5BE9BE77A0E80A888DAEDD /* LITEMEventMachine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LITEMEventMachine.h; sourceTree = "<group>"; };
+		254A3E12D947F253D1BDB71BFD014827 /* LITEMBaseListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LITEMBaseListener.m; sourceTree = "<group>"; };
+		372286B649915C8496208F8969AB2738 /* LITEMEventMachine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LITEMEventMachine.m; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		403704D2C5EF26EF3A5814BAEF511FB6 /* Pods-LITEventMachine_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LITEventMachine_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		43945B0F79AB62485C3C91503C066541 /* LITEventMachine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LITEventMachine.xcconfig; sourceTree = "<group>"; };
+		4C4A2B0B85AE42032E3AE38FF99EFE28 /* Pods-LITEventMachine_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LITEventMachine_Example-resources.sh"; sourceTree = "<group>"; };
+		4E8CA62AC37DA212597F5146181E12CD /* Pods-LITEventMachine_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LITEventMachine_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F1F486310CC8F3DFD8898206289961E /* Pods-LITEventMachine_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LITEventMachine_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4FC7E4BB707B93F5EF609C21A720942C /* Pods-LITEventMachine_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LITEventMachine_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		51F587330BB1D5BA5517012B05ADB7D3 /* LITEMBaseEventFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LITEMBaseEventFactory.m; sourceTree = "<group>"; };
+		61DE9E6FC46CA2CCAA8AE4F92B3308A4 /* Pods-LITEventMachine_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LITEventMachine_Example-dummy.m"; sourceTree = "<group>"; };
+		6ABC809E0964DB0BFB50404F961E91ED /* LITEMEventBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LITEMEventBase.m; sourceTree = "<group>"; };
+		770306E1515330F6AA4BFD3D9E776846 /* LITEMBaseListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LITEMBaseListener.h; sourceTree = "<group>"; };
+		78B8CF0DD7C214B7D62AF0BA09563529 /* libLITEventMachine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLITEventMachine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7C04CD09A57E70D80DA89C4A46933A /* LITEventMachine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LITEventMachine-prefix.pch"; sourceTree = "<group>"; };
+		7C3B676951786C02548BFAB6ABF3508D /* LITEMBaseEventFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LITEMBaseEventFactory.h; sourceTree = "<group>"; };
+		80430F9E435C4A8139F88AD4779132ED /* LITEMEventBus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LITEMEventBus.m; sourceTree = "<group>"; };
+		B2C8FB5D90382D6F100F012C43406EAA /* Pods-LITEventMachine_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LITEventMachine_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C293C2F2884F101BBB4C62437656ED16 /* Pods-LITEventMachine_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LITEventMachine_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C3EB7A427E6BE6FD895609F52784369B /* libPods-LITEventMachine_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LITEventMachine_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C844FB89BBCC747783239A82AF274B16 /* Pods-LITEventMachine_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LITEventMachine_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8675A68E3CF7201E3E3732BADEBEB0E /* LITEventMachine.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LITEventMachine.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB09CF1E36E55C830352A3D48CCE1F2B /* LITEventMachine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LITEventMachine-dummy.m"; sourceTree = "<group>"; };
+		D84EA7D196937198DF9AE6B03BFD4310 /* libPods-LITEventMachine_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LITEventMachine_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4FC2209DA379697C7416E284F6349E9 /* Pods-LITEventMachine_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LITEventMachine_Tests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30FB7004833F5FF0C99D7FD27DB3C312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AFE4E996005EF130C1DAA56BB1439D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F07FFC3BB1B5F32C5B1F6B0ED9C8B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A185731F8E1D75D468F0F416F19B2C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C166F9CD79BE4331250EEB7D47A06379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F71BD7A49D44E129B03F6EA5FB02A956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AAEBB9C71A5F87CE90ECAAEB01F2CA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00C2448D3EA7CF8D586F17DA2ACD90D0 /* EventMachine */ = {
+			isa = PBXGroup;
+			children = (
+				2BC3D090589F387F7A73AA1E1A12A935 /* Event */,
+				8C258245FDCCC1BA9B1762A9BBD9A607 /* EventBus */,
+				1C0B207A34C5DB2703A5C50FB483F9D9 /* EventMachine */,
+				182CDE324B1DBAEF256C8CF1EE79D9D8 /* Listener */,
+			);
+			path = EventMachine;
+			sourceTree = "<group>";
+		};
+		02F8444A76D04AC720A0C297BAFEDBC4 /* Pods-LITEventMachine_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C844FB89BBCC747783239A82AF274B16 /* Pods-LITEventMachine_Example-acknowledgements.markdown */,
+				C293C2F2884F101BBB4C62437656ED16 /* Pods-LITEventMachine_Example-acknowledgements.plist */,
+				61DE9E6FC46CA2CCAA8AE4F92B3308A4 /* Pods-LITEventMachine_Example-dummy.m */,
+				B2C8FB5D90382D6F100F012C43406EAA /* Pods-LITEventMachine_Example-frameworks.sh */,
+				4C4A2B0B85AE42032E3AE38FF99EFE28 /* Pods-LITEventMachine_Example-resources.sh */,
+				403704D2C5EF26EF3A5814BAEF511FB6 /* Pods-LITEventMachine_Example.debug.xcconfig */,
+				1524C1EFC8999301CFE9CEA30C09EC7C /* Pods-LITEventMachine_Example.release.xcconfig */,
+			);
+			name = "Pods-LITEventMachine_Example";
+			path = "Target Support Files/Pods-LITEventMachine_Example";
+			sourceTree = "<group>";
+		};
+		182CDE324B1DBAEF256C8CF1EE79D9D8 /* Listener */ = {
+			isa = PBXGroup;
+			children = (
+				770306E1515330F6AA4BFD3D9E776846 /* LITEMBaseListener.h */,
+				254A3E12D947F253D1BDB71BFD014827 /* LITEMBaseListener.m */,
+			);
+			path = Listener;
+			sourceTree = "<group>";
+		};
+		1C0B207A34C5DB2703A5C50FB483F9D9 /* EventMachine */ = {
+			isa = PBXGroup;
+			children = (
+				2303837DCF5BE9BE77A0E80A888DAEDD /* LITEMEventMachine.h */,
+				372286B649915C8496208F8969AB2738 /* LITEMEventMachine.m */,
+			);
+			path = EventMachine;
+			sourceTree = "<group>";
+		};
+		2BC3D090589F387F7A73AA1E1A12A935 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				7C3B676951786C02548BFAB6ABF3508D /* LITEMBaseEventFactory.h */,
+				51F587330BB1D5BA5517012B05ADB7D3 /* LITEMBaseEventFactory.m */,
+				044DEF3D7A8F61F98DD241CF6CD38F6D /* LITEMEventBase.h */,
+				6ABC809E0964DB0BFB50404F961E91ED /* LITEMEventBase.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		3F672DC3DBD2051870C51200985D4173 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43945B0F79AB62485C3C91503C066541 /* LITEventMachine.xcconfig */,
+				CB09CF1E36E55C830352A3D48CCE1F2B /* LITEventMachine-dummy.m */,
+				7A7C04CD09A57E70D80DA89C4A46933A /* LITEventMachine-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LITEventMachine";
+			sourceTree = "<group>";
+		};
+		4AAC11316B8476FE53506CF301449533 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78B8CF0DD7C214B7D62AF0BA09563529 /* libLITEventMachine.a */,
+				D84EA7D196937198DF9AE6B03BFD4310 /* libPods-LITEventMachine_Example.a */,
+				C3EB7A427E6BE6FD895609F52784369B /* libPods-LITEventMachine_Tests.a */,
+				C8675A68E3CF7201E3E3732BADEBEB0E /* LITEventMachine.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56FACBD72476AE6D2C5F30E362CE17B2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C23B7A48BFCEE89D13AD27C9F4C395BE /* LITEventMachine */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				56FACBD72476AE6D2C5F30E362CE17B2 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4AAC11316B8476FE53506CF301449533 /* Products */,
+				D7CAAD5CF55B6968202A833646A5D8D5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C258245FDCCC1BA9B1762A9BBD9A607 /* EventBus */ = {
+			isa = PBXGroup;
+			children = (
+				1F31156FE7522D2E5B6E7446F1755FA6 /* LITEMEventBus.h */,
+				80430F9E435C4A8139F88AD4779132ED /* LITEMEventBus.m */,
+			);
+			path = EventBus;
+			sourceTree = "<group>";
+		};
+		9D2FDA0900DE3B451F64D17AF843CD9F /* Pods-LITEventMachine_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				04B1B008D025DED44F61E8A09C501AF9 /* Pods-LITEventMachine_Tests-acknowledgements.markdown */,
+				4E8CA62AC37DA212597F5146181E12CD /* Pods-LITEventMachine_Tests-acknowledgements.plist */,
+				14258D364EE3DB26571F80080890B63A /* Pods-LITEventMachine_Tests-dummy.m */,
+				4FC7E4BB707B93F5EF609C21A720942C /* Pods-LITEventMachine_Tests-frameworks.sh */,
+				F4FC2209DA379697C7416E284F6349E9 /* Pods-LITEventMachine_Tests-resources.sh */,
+				0B668DAEB1ECED6BF024DC8F80DD4D24 /* Pods-LITEventMachine_Tests.debug.xcconfig */,
+				4F1F486310CC8F3DFD8898206289961E /* Pods-LITEventMachine_Tests.release.xcconfig */,
+			);
+			name = "Pods-LITEventMachine_Tests";
+			path = "Target Support Files/Pods-LITEventMachine_Tests";
+			sourceTree = "<group>";
+		};
+		9FB6289C1A447359D7C8BA9ED4255356 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				00C2448D3EA7CF8D586F17DA2ACD90D0 /* EventMachine */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C23B7A48BFCEE89D13AD27C9F4C395BE /* LITEventMachine */ = {
+			isa = PBXGroup;
+			children = (
+				D96CB7082C1DDFAE9C5B56F8BA7F7AEE /* Pod */,
+				3F672DC3DBD2051870C51200985D4173 /* Support Files */,
+			);
+			name = LITEventMachine;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D7CAAD5CF55B6968202A833646A5D8D5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02F8444A76D04AC720A0C297BAFEDBC4 /* Pods-LITEventMachine_Example */,
+				9D2FDA0900DE3B451F64D17AF843CD9F /* Pods-LITEventMachine_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D96CB7082C1DDFAE9C5B56F8BA7F7AEE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9FB6289C1A447359D7C8BA9ED4255356 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E4817CDD02EEC93808AA2D010BC3959B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11B655539A896E4ECCF425CAD01EC22 /* LITEMBaseEventFactory.h in Headers */,
+				EE1232F121F243F7EA1295ECB0ACBC27 /* LITEMBaseListener.h in Headers */,
+				1D29BAD7BCD776F66C4525855D8583BC /* LITEMEventBase.h in Headers */,
+				7084F98B4769AE49C67519DA2FB194C3 /* LITEMEventBus.h in Headers */,
+				1318113FCF3A48A4B4898813483354AC /* LITEMEventMachine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0604F604445E39198EA15EC706204B51 /* LITEventMachine-LITEventMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4C8D72FE44CB75C425E59BA08982DEF /* Build configuration list for PBXNativeTarget "LITEventMachine-LITEventMachine" */;
+			buildPhases = (
+				92A8ACE1372840FD623274DE39A30BD6 /* Sources */,
+				C166F9CD79BE4331250EEB7D47A06379 /* Frameworks */,
+				646E992DC4FF138CCB08263A71E6C85B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LITEventMachine-LITEventMachine";
+			productName = "LITEventMachine-LITEventMachine";
+			productReference = C8675A68E3CF7201E3E3732BADEBEB0E /* LITEventMachine.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		3857E13EC4CE75318570CE83ACA669C7 /* Pods-LITEventMachine_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DF5C4D7738CEB9F9F613302207AE25 /* Build configuration list for PBXNativeTarget "Pods-LITEventMachine_Tests" */;
+			buildPhases = (
+				4889E22350EE31FF06BF7CF5DB673C5A /* Sources */,
+				B7F07FFC3BB1B5F32C5B1F6B0ED9C8B2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B1EE196132702CFC59EED7A38873DBB /* PBXTargetDependency */,
+			);
+			name = "Pods-LITEventMachine_Tests";
+			productName = "Pods-LITEventMachine_Tests";
+			productReference = C3EB7A427E6BE6FD895609F52784369B /* libPods-LITEventMachine_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6425EAA1A2CC425407E73FC06EA9DE8A /* Pods-LITEventMachine_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F97742DF95B44C3EC9D4F61040FE93A /* Build configuration list for PBXNativeTarget "Pods-LITEventMachine_Example" */;
+			buildPhases = (
+				4AB8751E4BC14591B6EB9BFC006E7561 /* Sources */,
+				30FB7004833F5FF0C99D7FD27DB3C312 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E82E1C8CDED3CB80685B6E1B10D6AA10 /* PBXTargetDependency */,
+			);
+			name = "Pods-LITEventMachine_Example";
+			productName = "Pods-LITEventMachine_Example";
+			productReference = D84EA7D196937198DF9AE6B03BFD4310 /* libPods-LITEventMachine_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BCDD6D23BE35D48C942FEA070E338746 /* LITEventMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10B4B28F1CB3EFEFA2F27E407804F399 /* Build configuration list for PBXNativeTarget "LITEventMachine" */;
+			buildPhases = (
+				DCEBA0A21E4E5334E0BCF92EAECA8DFD /* Sources */,
+				F71BD7A49D44E129B03F6EA5FB02A956 /* Frameworks */,
+				E4817CDD02EEC93808AA2D010BC3959B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8410EA5DDEE0E34A3B7249956086E64C /* PBXTargetDependency */,
+			);
+			name = LITEventMachine;
+			productName = LITEventMachine;
+			productReference = 78B8CF0DD7C214B7D62AF0BA09563529 /* libLITEventMachine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4AAC11316B8476FE53506CF301449533 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCDD6D23BE35D48C942FEA070E338746 /* LITEventMachine */,
+				0604F604445E39198EA15EC706204B51 /* LITEventMachine-LITEventMachine */,
+				6425EAA1A2CC425407E73FC06EA9DE8A /* Pods-LITEventMachine_Example */,
+				3857E13EC4CE75318570CE83ACA669C7 /* Pods-LITEventMachine_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		646E992DC4FF138CCB08263A71E6C85B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4889E22350EE31FF06BF7CF5DB673C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1432850F6C00FB95B75A934FF37AF04 /* Pods-LITEventMachine_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AB8751E4BC14591B6EB9BFC006E7561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F39D81344562649C5751F0CD7EC9692 /* Pods-LITEventMachine_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A8ACE1372840FD623274DE39A30BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEBA0A21E4E5334E0BCF92EAECA8DFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1BE72E9816D64C90A44A85A9485915 /* LITEMBaseEventFactory.m in Sources */,
+				14585DCE01CCBBE7B291413D708975B2 /* LITEMBaseListener.m in Sources */,
+				9BCFD9790D1E66105D62D9C56BA024C5 /* LITEMEventBase.m in Sources */,
+				82BB8A740931DEC711108ECD07E92C84 /* LITEMEventBus.m in Sources */,
+				B17973856C111DF1B10C72CB83B4092B /* LITEMEventMachine.m in Sources */,
+				1A7B99B72755957E90BB4C8F968F22E2 /* LITEventMachine-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8410EA5DDEE0E34A3B7249956086E64C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LITEventMachine-LITEventMachine";
+			target = 0604F604445E39198EA15EC706204B51 /* LITEventMachine-LITEventMachine */;
+			targetProxy = BCBDCEAD6D4FD0E874247CF0187F2C03 /* PBXContainerItemProxy */;
+		};
+		8B1EE196132702CFC59EED7A38873DBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LITEventMachine;
+			target = BCDD6D23BE35D48C942FEA070E338746 /* LITEventMachine */;
+			targetProxy = 532EC0ED56BB9AB6B7304C0D91BD8CDE /* PBXContainerItemProxy */;
+		};
+		E82E1C8CDED3CB80685B6E1B10D6AA10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LITEventMachine;
+			target = BCDD6D23BE35D48C942FEA070E338746 /* LITEventMachine */;
+			targetProxy = A8EF02DF40BB2E3325CC30DDC617DAEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		083D5B35052127EC25A8D1660AB3F3BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F1F486310CC8F3DFD8898206289961E /* Pods-LITEventMachine_Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		12BEC7197E30E6D92A13DC49781E8C2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 403704D2C5EF26EF3A5814BAEF511FB6 /* Pods-LITEventMachine_Example.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2305CD38766248FB7E2E32AE15B0D643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B668DAEB1ECED6BF024DC8F80DD4D24 /* Pods-LITEventMachine_Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		67B138311ACAC22A56EAAA020D72E795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43945B0F79AB62485C3C91503C066541 /* LITEventMachine.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LITEventMachine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		975C8862AB08F3271553AC86D0D017C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43945B0F79AB62485C3C91503C066541 /* LITEventMachine.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LITEventMachine/LITEventMachine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CDF1CB675E4FCAC6300FD90C94EECBC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43945B0F79AB62485C3C91503C066541 /* LITEventMachine.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LITEventMachine/LITEventMachine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CF94717FED227813BC0DB4F9B4053634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1524C1EFC8999301CFE9CEA30C09EC7C /* Pods-LITEventMachine_Example.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EAF6C3E522234C236E79739ED298A7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43945B0F79AB62485C3C91503C066541 /* LITEventMachine.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LITEventMachine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10B4B28F1CB3EFEFA2F27E407804F399 /* Build configuration list for PBXNativeTarget "LITEventMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975C8862AB08F3271553AC86D0D017C0 /* Debug */,
+				CDF1CB675E4FCAC6300FD90C94EECBC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F97742DF95B44C3EC9D4F61040FE93A /* Build configuration list for PBXNativeTarget "Pods-LITEventMachine_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BEC7197E30E6D92A13DC49781E8C2E /* Debug */,
+				CF94717FED227813BC0DB4F9B4053634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4C8D72FE44CB75C425E59BA08982DEF /* Build configuration list for PBXNativeTarget "LITEventMachine-LITEventMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF6C3E522234C236E79739ED298A7CA /* Debug */,
+				67B138311ACAC22A56EAAA020D72E795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8DF5C4D7738CEB9F9F613302207AE25 /* Build configuration list for PBXNativeTarget "Pods-LITEventMachine_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2305CD38766248FB7E2E32AE15B0D643 /* Debug */,
+				083D5B35052127EC25A8D1660AB3F3BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
