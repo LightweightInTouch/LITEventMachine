@@ -23,6 +23,8 @@
 
 - (LITEMEventBase *)eventWithType:(NSString *)type;
 
+- (LITEMEventBase *)decodeEventWithMessage:(NSString *)message;
+
 + (LITEMEventBase *)eventWithType:(NSString *)type;
 
 @end

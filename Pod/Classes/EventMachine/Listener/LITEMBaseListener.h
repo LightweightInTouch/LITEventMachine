@@ -22,6 +22,7 @@
 @protocol LITEMBaseListenerEventGenerator <NSObject>
 
 - (LITEMEventBase *)eventWithType:(NSString *)type;
+@optional - (LITEMEventBase *)decodeEventWithMessage:(NSString *)message;
 
 @end
 

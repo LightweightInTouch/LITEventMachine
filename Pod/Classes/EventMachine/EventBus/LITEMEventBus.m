@@ -8,15 +8,62 @@
 
 #import "LITEMEventBus.h"
 
+@interface LITEMEventRouter
+
+- (void)subscribeOnEventWithMessage:(NSString *)message;
+
+@property(nonatomic, weak) id<LITEMBaseListenerEventGenerator> generator;
+@property(nonatomic, weak) LITEMEventBus *bus;
+@end
+
+@implementation LITEMEventRouter
+
+void notificationCallback(CFNotificationCenterRef center,
+                          void * observer,
+                          CFStringRef name,
+                          void const * object,
+                          CFDictionaryRef userInfo) {
+
+    // put it in general bus?
+    LITEMEventBase *event = nil;
+    if ([self.generator respondsToSelector:@selector(decodeEventWithMessage:]) {
+        event = [self.generator decodeEventWithMessage:name];
+    }
+    // fire it inside bus?
+    [bus fireEvent:event];
+}
+
+- (void)subscribeOnEventWithMessage:(NSString *)message {
+    CFNotificationCenterRef const center = CFNotificationCenterGetDarwinNotifyCenter();
+    CFNotificationCenterAddObserver(center,
+                                    (__bridge const void *)(self),
+                                    notificationCallback,
+                                    (__bridge CFStringRef)message,
+                                    NULL,
+                                    CFNotificationSuspensionBehaviorDeliverImmediately);
+}
+
+@end
+
 @interface LITEMEventBus() <LITEMBaseListenerEventGenerator>
 
 @property (nonatomic, strong) NSArray *listeners;
+@property (nonatomic, strong) LITEMEventRouter *router;
 
 @end
 
 @implementation LITEMEventBus
 
 #pragma mark - Getters
+
+- (LITEMEventRouter *)router {
+    if (!_router) {
+        _router = [LITEMEventRouter new];
+        _router.generator = self.eventFactory;
+        _router.bus = self;
+    }
+    return _router;
+}
 
 - (LITEMBaseEventFactory *)eventFactory {
     if (!_eventFactory) {
@@ -72,6 +119,14 @@
 
 - (void)fireEvent:(LITEMEventBase *)event {
     [[NSNotificationCenter defaultCenter] postNotificationName:event.type object:event];
+}
+
+- (void)fireEventWithMessage:(NSString *)message {
+    // fire event, bus will handle it?
+    CFNotificationCenterRef const center = CFNotificationCenterGetDarwinNotifyCenter();
+    CFNotificationCenterPostNotification(center, (__bridge CFStringRef)message, NULL, NULL, YES);
+    [self.router subscribeOnEventWithMessage:message];
+
 }
 
 - (void)fireEventWithType:(NSString *)type {

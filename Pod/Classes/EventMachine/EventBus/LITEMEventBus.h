@@ -26,6 +26,7 @@
 
 #pragma mark - Fire
 - (void)fireEvent:(LITEMEventBase *)event;
+- (void)fireEventWithMessage:(NSString *)message;
 - (void)fireEventWithType:(NSString *)type;
 
 @end

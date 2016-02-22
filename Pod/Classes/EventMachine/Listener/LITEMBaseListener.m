@@ -32,7 +32,10 @@
     if ([notification.object isKindOfClass:[LITEMEventBase class]]) {
         event = notification.object;
     }
-    else {
+    else if (!event && [self.generator respondsToSelector:@selector(decodeEventWithMessage:)]) {
+        event = [self.generator decodeEventWithMessage:notification.name];
+    }
+    else if (!event) {
         event = [self.generator eventWithType:notification.name];
     }
 

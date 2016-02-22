@@ -65,6 +65,11 @@
     return self.types[type];
 }
 
+- (LITEMEventBase *)decodeEventWithMessage:(NSString *)message {
+    // implement in your factory
+    return nil;
+}
+
 + (LITEMEventBase *)eventWithType:(NSString *)type {
     return [[self new] eventWithType:type];
 }
