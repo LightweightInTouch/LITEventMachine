@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'EE3947249ED1155662561640'
+               BlueprintIdentifier = '1BB0A527895706EF37B05ED6'
                BlueprintName = 'LITEventMachine'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libLITEventMachine.a'>

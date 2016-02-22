@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LITEventMachine: 6161544c9d1d6ef3bdc925b22b54d8be6fc7ddde
+  LITEventMachine: 3fedde238ae5877c083acea385f4547c99b3b76b
 
 COCOAPODS: 0.39.0

@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1318113FCF3A48A4B4898813483354AC /* LITEMEventMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2303837DCF5BE9BE77A0E80A888DAEDD /* LITEMEventMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14585DCE01CCBBE7B291413D708975B2 /* LITEMBaseListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 254A3E12D947F253D1BDB71BFD014827 /* LITEMBaseListener.m */; };
-		1A7B99B72755957E90BB4C8F968F22E2 /* LITEventMachine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB09CF1E36E55C830352A3D48CCE1F2B /* LITEventMachine-dummy.m */; };
-		1D29BAD7BCD776F66C4525855D8583BC /* LITEMEventBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 044DEF3D7A8F61F98DD241CF6CD38F6D /* LITEMEventBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		241F318E10049A25EEB086B561F23FCB /* LITEMEventBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC809E0964DB0BFB50404F961E91ED /* LITEMEventBase.m */; };
+		256824AC79080780E4D674E1F7A0C2A9 /* LITEMEventBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 044DEF3D7A8F61F98DD241CF6CD38F6D /* LITEMEventBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33464308A0566B8131841DDD558440A2 /* LITEMEventBus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F31156FE7522D2E5B6E7446F1755FA6 /* LITEMEventBus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4901D92A3676EFE1C9EDB8F24E6036BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		55AFE4E996005EF130C1DAA56BB1439D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		5B1BE72E9816D64C90A44A85A9485915 /* LITEMBaseEventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F587330BB1D5BA5517012B05ADB7D3 /* LITEMBaseEventFactory.m */; };
+		5E7854C5AEFE28DE0AC8736FA230CED5 /* LITEMBaseEventFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3B676951786C02548BFAB6ABF3508D /* LITEMBaseEventFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F39D81344562649C5751F0CD7EC9692 /* Pods-LITEventMachine_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DE9E6FC46CA2CCAA8AE4F92B3308A4 /* Pods-LITEventMachine_Example-dummy.m */; };
-		7084F98B4769AE49C67519DA2FB194C3 /* LITEMEventBus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F31156FE7522D2E5B6E7446F1755FA6 /* LITEMEventBus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82BB8A740931DEC711108ECD07E92C84 /* LITEMEventBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 80430F9E435C4A8139F88AD4779132ED /* LITEMEventBus.m */; };
+		60B907511B0CE4F6DD7425ED0CA89CFB /* LITEMEventBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 80430F9E435C4A8139F88AD4779132ED /* LITEMEventBus.m */; };
+		7F6812479776FB96EC3205F40A3E0BAA /* LITEventMachine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB09CF1E36E55C830352A3D48CCE1F2B /* LITEventMachine-dummy.m */; };
 		8A185731F8E1D75D468F0F416F19B2C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9AAEBB9C71A5F87CE90ECAAEB01F2CA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9BCFD9790D1E66105D62D9C56BA024C5 /* LITEMEventBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC809E0964DB0BFB50404F961E91ED /* LITEMEventBase.m */; };
-		B17973856C111DF1B10C72CB83B4092B /* LITEMEventMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 372286B649915C8496208F8969AB2738 /* LITEMEventMachine.m */; };
+		8B0958BF87219143859018FABEE5B615 /* LITEMEventMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2303837DCF5BE9BE77A0E80A888DAEDD /* LITEMEventMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E6AD8A86DF092BCC5A962C0CD1C43D5 /* LITEMBaseEventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F587330BB1D5BA5517012B05ADB7D3 /* LITEMBaseEventFactory.m */; };
+		9DFD688F38D2BE9D8F903988E28DB3CF /* LITEMEventMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 372286B649915C8496208F8969AB2738 /* LITEMEventMachine.m */; };
+		C4ED27EDB59CC02A2ECF398E2E4C904E /* LITEMBaseListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 254A3E12D947F253D1BDB71BFD014827 /* LITEMBaseListener.m */; };
+		C70ECBE6ACF51ED44CBC602F7CAC2208 /* LITEMBaseListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 770306E1515330F6AA4BFD3D9E776846 /* LITEMBaseListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1432850F6C00FB95B75A934FF37AF04 /* Pods-LITEventMachine_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14258D364EE3DB26571F80080890B63A /* Pods-LITEventMachine_Tests-dummy.m */; };
-		EE1232F121F243F7EA1295ECB0ACBC27 /* LITEMBaseListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 770306E1515330F6AA4BFD3D9E776846 /* LITEMBaseListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F11B655539A896E4ECCF425CAD01EC22 /* LITEMBaseEventFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3B676951786C02548BFAB6ABF3508D /* LITEMBaseEventFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,26 +30,20 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BCDD6D23BE35D48C942FEA070E338746;
+			remoteGlobalIDString = E20BD54EE9B10A99F985800F36B062B9;
 			remoteInfo = LITEventMachine;
 		};
 		A8EF02DF40BB2E3325CC30DDC617DAEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BCDD6D23BE35D48C942FEA070E338746;
+			remoteGlobalIDString = E20BD54EE9B10A99F985800F36B062B9;
 			remoteInfo = LITEventMachine;
-		};
-		BCBDCEAD6D4FD0E874247CF0187F2C03 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0604F604445E39198EA15EC706204B51;
-			remoteInfo = "LITEventMachine-LITEventMachine";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0120E11646FD044284CE8B9B71548C87 /* libPods-LITEventMachine_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LITEventMachine_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044DEF3D7A8F61F98DD241CF6CD38F6D /* LITEMEventBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LITEMEventBase.h; sourceTree = "<group>"; };
 		04B1B008D025DED44F61E8A09C501AF9 /* Pods-LITEventMachine_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LITEventMachine_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0B668DAEB1ECED6BF024DC8F80DD4D24 /* Pods-LITEventMachine_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LITEventMachine_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,20 +62,18 @@
 		4FC7E4BB707B93F5EF609C21A720942C /* Pods-LITEventMachine_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LITEventMachine_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		51F587330BB1D5BA5517012B05ADB7D3 /* LITEMBaseEventFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LITEMBaseEventFactory.m; sourceTree = "<group>"; };
 		61DE9E6FC46CA2CCAA8AE4F92B3308A4 /* Pods-LITEventMachine_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LITEventMachine_Example-dummy.m"; sourceTree = "<group>"; };
+		69E7BFC029E37AF9D61FE122DBD6BB8F /* libPods-LITEventMachine_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LITEventMachine_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ABC809E0964DB0BFB50404F961E91ED /* LITEMEventBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LITEMEventBase.m; sourceTree = "<group>"; };
 		770306E1515330F6AA4BFD3D9E776846 /* LITEMBaseListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LITEMBaseListener.h; sourceTree = "<group>"; };
-		78B8CF0DD7C214B7D62AF0BA09563529 /* libLITEventMachine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLITEventMachine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7C04CD09A57E70D80DA89C4A46933A /* LITEventMachine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LITEventMachine-prefix.pch"; sourceTree = "<group>"; };
 		7C3B676951786C02548BFAB6ABF3508D /* LITEMBaseEventFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LITEMBaseEventFactory.h; sourceTree = "<group>"; };
 		80430F9E435C4A8139F88AD4779132ED /* LITEMEventBus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LITEMEventBus.m; sourceTree = "<group>"; };
 		B2C8FB5D90382D6F100F012C43406EAA /* Pods-LITEventMachine_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LITEventMachine_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C293C2F2884F101BBB4C62437656ED16 /* Pods-LITEventMachine_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LITEventMachine_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C3EB7A427E6BE6FD895609F52784369B /* libPods-LITEventMachine_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LITEventMachine_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C844FB89BBCC747783239A82AF274B16 /* Pods-LITEventMachine_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LITEventMachine_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C8675A68E3CF7201E3E3732BADEBEB0E /* LITEventMachine.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LITEventMachine.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB09CF1E36E55C830352A3D48CCE1F2B /* LITEventMachine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LITEventMachine-dummy.m"; sourceTree = "<group>"; };
-		D84EA7D196937198DF9AE6B03BFD4310 /* libPods-LITEventMachine_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LITEventMachine_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DE885D960AC907C43145847651324F /* libLITEventMachine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLITEventMachine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FC2209DA379697C7416E284F6349E9 /* Pods-LITEventMachine_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LITEventMachine_Tests-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,26 +86,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BD03340CCCD3E46D316191D63FDC01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4901D92A3676EFE1C9EDB8F24E6036BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7F07FFC3BB1B5F32C5B1F6B0ED9C8B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8A185731F8E1D75D468F0F416F19B2C1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C166F9CD79BE4331250EEB7D47A06379 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F71BD7A49D44E129B03F6EA5FB02A956 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9AAEBB9C71A5F87CE90ECAAEB01F2CA2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,17 +171,6 @@
 			path = "Example/Pods/Target Support Files/LITEventMachine";
 			sourceTree = "<group>";
 		};
-		4AAC11316B8476FE53506CF301449533 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				78B8CF0DD7C214B7D62AF0BA09563529 /* libLITEventMachine.a */,
-				D84EA7D196937198DF9AE6B03BFD4310 /* libPods-LITEventMachine_Example.a */,
-				C3EB7A427E6BE6FD895609F52784369B /* libPods-LITEventMachine_Tests.a */,
-				C8675A68E3CF7201E3E3732BADEBEB0E /* LITEventMachine.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		56FACBD72476AE6D2C5F30E362CE17B2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,7 +185,7 @@
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				56FACBD72476AE6D2C5F30E362CE17B2 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4AAC11316B8476FE53506CF301449533 /* Products */,
+				BE48B03EFDC349D8E01C13396640D879 /* Products */,
 				D7CAAD5CF55B6968202A833646A5D8D5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -256,6 +230,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BE48B03EFDC349D8E01C13396640D879 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2DE885D960AC907C43145847651324F /* libLITEventMachine.a */,
+				69E7BFC029E37AF9D61FE122DBD6BB8F /* libPods-LITEventMachine_Example.a */,
+				0120E11646FD044284CE8B9B71548C87 /* libPods-LITEventMachine_Tests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,38 +278,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E4817CDD02EEC93808AA2D010BC3959B /* Headers */ = {
+		26EECDCD596E45276120B1C807704931 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F11B655539A896E4ECCF425CAD01EC22 /* LITEMBaseEventFactory.h in Headers */,
-				EE1232F121F243F7EA1295ECB0ACBC27 /* LITEMBaseListener.h in Headers */,
-				1D29BAD7BCD776F66C4525855D8583BC /* LITEMEventBase.h in Headers */,
-				7084F98B4769AE49C67519DA2FB194C3 /* LITEMEventBus.h in Headers */,
-				1318113FCF3A48A4B4898813483354AC /* LITEMEventMachine.h in Headers */,
+				5E7854C5AEFE28DE0AC8736FA230CED5 /* LITEMBaseEventFactory.h in Headers */,
+				C70ECBE6ACF51ED44CBC602F7CAC2208 /* LITEMBaseListener.h in Headers */,
+				256824AC79080780E4D674E1F7A0C2A9 /* LITEMEventBase.h in Headers */,
+				33464308A0566B8131841DDD558440A2 /* LITEMEventBus.h in Headers */,
+				8B0958BF87219143859018FABEE5B615 /* LITEMEventMachine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0604F604445E39198EA15EC706204B51 /* LITEventMachine-LITEventMachine */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B4C8D72FE44CB75C425E59BA08982DEF /* Build configuration list for PBXNativeTarget "LITEventMachine-LITEventMachine" */;
-			buildPhases = (
-				92A8ACE1372840FD623274DE39A30BD6 /* Sources */,
-				C166F9CD79BE4331250EEB7D47A06379 /* Frameworks */,
-				646E992DC4FF138CCB08263A71E6C85B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "LITEventMachine-LITEventMachine";
-			productName = "LITEventMachine-LITEventMachine";
-			productReference = C8675A68E3CF7201E3E3732BADEBEB0E /* LITEventMachine.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		3857E13EC4CE75318570CE83ACA669C7 /* Pods-LITEventMachine_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8DF5C4D7738CEB9F9F613302207AE25 /* Build configuration list for PBXNativeTarget "Pods-LITEventMachine_Tests" */;
@@ -340,7 +307,7 @@
 			);
 			name = "Pods-LITEventMachine_Tests";
 			productName = "Pods-LITEventMachine_Tests";
-			productReference = C3EB7A427E6BE6FD895609F52784369B /* libPods-LITEventMachine_Tests.a */;
+			productReference = 0120E11646FD044284CE8B9B71548C87 /* libPods-LITEventMachine_Tests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		6425EAA1A2CC425407E73FC06EA9DE8A /* Pods-LITEventMachine_Example */ = {
@@ -357,25 +324,24 @@
 			);
 			name = "Pods-LITEventMachine_Example";
 			productName = "Pods-LITEventMachine_Example";
-			productReference = D84EA7D196937198DF9AE6B03BFD4310 /* libPods-LITEventMachine_Example.a */;
+			productReference = 69E7BFC029E37AF9D61FE122DBD6BB8F /* libPods-LITEventMachine_Example.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		BCDD6D23BE35D48C942FEA070E338746 /* LITEventMachine */ = {
+		E20BD54EE9B10A99F985800F36B062B9 /* LITEventMachine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10B4B28F1CB3EFEFA2F27E407804F399 /* Build configuration list for PBXNativeTarget "LITEventMachine" */;
+			buildConfigurationList = 8EE954D0071E7B2E6536F72E98006B17 /* Build configuration list for PBXNativeTarget "LITEventMachine" */;
 			buildPhases = (
-				DCEBA0A21E4E5334E0BCF92EAECA8DFD /* Sources */,
-				F71BD7A49D44E129B03F6EA5FB02A956 /* Frameworks */,
-				E4817CDD02EEC93808AA2D010BC3959B /* Headers */,
+				534513A21725B9C6BE81026E2B78D79C /* Sources */,
+				7BD03340CCCD3E46D316191D63FDC01F /* Frameworks */,
+				26EECDCD596E45276120B1C807704931 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8410EA5DDEE0E34A3B7249956086E64C /* PBXTargetDependency */,
 			);
 			name = LITEventMachine;
 			productName = LITEventMachine;
-			productReference = 78B8CF0DD7C214B7D62AF0BA09563529 /* libLITEventMachine.a */;
+			productReference = F2DE885D960AC907C43145847651324F /* libLITEventMachine.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -395,27 +361,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4AAC11316B8476FE53506CF301449533 /* Products */;
+			productRefGroup = BE48B03EFDC349D8E01C13396640D879 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BCDD6D23BE35D48C942FEA070E338746 /* LITEventMachine */,
-				0604F604445E39198EA15EC706204B51 /* LITEventMachine-LITEventMachine */,
+				E20BD54EE9B10A99F985800F36B062B9 /* LITEventMachine */,
 				6425EAA1A2CC425407E73FC06EA9DE8A /* Pods-LITEventMachine_Example */,
 				3857E13EC4CE75318570CE83ACA669C7 /* Pods-LITEventMachine_Tests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		646E992DC4FF138CCB08263A71E6C85B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4889E22350EE31FF06BF7CF5DB673C5A /* Sources */ = {
@@ -434,45 +389,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92A8ACE1372840FD623274DE39A30BD6 /* Sources */ = {
+		534513A21725B9C6BE81026E2B78D79C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCEBA0A21E4E5334E0BCF92EAECA8DFD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B1BE72E9816D64C90A44A85A9485915 /* LITEMBaseEventFactory.m in Sources */,
-				14585DCE01CCBBE7B291413D708975B2 /* LITEMBaseListener.m in Sources */,
-				9BCFD9790D1E66105D62D9C56BA024C5 /* LITEMEventBase.m in Sources */,
-				82BB8A740931DEC711108ECD07E92C84 /* LITEMEventBus.m in Sources */,
-				B17973856C111DF1B10C72CB83B4092B /* LITEMEventMachine.m in Sources */,
-				1A7B99B72755957E90BB4C8F968F22E2 /* LITEventMachine-dummy.m in Sources */,
+				8E6AD8A86DF092BCC5A962C0CD1C43D5 /* LITEMBaseEventFactory.m in Sources */,
+				C4ED27EDB59CC02A2ECF398E2E4C904E /* LITEMBaseListener.m in Sources */,
+				241F318E10049A25EEB086B561F23FCB /* LITEMEventBase.m in Sources */,
+				60B907511B0CE4F6DD7425ED0CA89CFB /* LITEMEventBus.m in Sources */,
+				9DFD688F38D2BE9D8F903988E28DB3CF /* LITEMEventMachine.m in Sources */,
+				7F6812479776FB96EC3205F40A3E0BAA /* LITEventMachine-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8410EA5DDEE0E34A3B7249956086E64C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "LITEventMachine-LITEventMachine";
-			target = 0604F604445E39198EA15EC706204B51 /* LITEventMachine-LITEventMachine */;
-			targetProxy = BCBDCEAD6D4FD0E874247CF0187F2C03 /* PBXContainerItemProxy */;
-		};
 		8B1EE196132702CFC59EED7A38873DBB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LITEventMachine;
-			target = BCDD6D23BE35D48C942FEA070E338746 /* LITEventMachine */;
+			target = E20BD54EE9B10A99F985800F36B062B9 /* LITEventMachine */;
 			targetProxy = 532EC0ED56BB9AB6B7304C0D91BD8CDE /* PBXContainerItemProxy */;
 		};
 		E82E1C8CDED3CB80685B6E1B10D6AA10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LITEventMachine;
-			target = BCDD6D23BE35D48C942FEA070E338746 /* LITEventMachine */;
+			target = E20BD54EE9B10A99F985800F36B062B9 /* LITEventMachine */;
 			targetProxy = A8EF02DF40BB2E3325CC30DDC617DAEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -602,37 +544,7 @@
 			};
 			name = Debug;
 		};
-		67B138311ACAC22A56EAAA020D72E795 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43945B0F79AB62485C3C91503C066541 /* LITEventMachine.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = LITEventMachine;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		975C8862AB08F3271553AC86D0D017C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43945B0F79AB62485C3C91503C066541 /* LITEventMachine.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LITEventMachine/LITEventMachine-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CDF1CB675E4FCAC6300FD90C94EECBC5 /* Release */ = {
+		2A86222B5859372DB391E8A73428A944 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43945B0F79AB62485C3C91503C066541 /* LITEventMachine.xcconfig */;
 			buildSettings = {
@@ -649,6 +561,24 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		585850AF155F5063202D31048EA4380D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43945B0F79AB62485C3C91503C066541 /* LITEventMachine.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LITEventMachine/LITEventMachine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		CF94717FED227813BC0DB4F9B4053634 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -667,30 +597,9 @@
 			};
 			name = Release;
 		};
-		EAF6C3E522234C236E79739ED298A7CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43945B0F79AB62485C3C91503C066541 /* LITEventMachine.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = LITEventMachine;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10B4B28F1CB3EFEFA2F27E407804F399 /* Build configuration list for PBXNativeTarget "LITEventMachine" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				975C8862AB08F3271553AC86D0D017C0 /* Debug */,
-				CDF1CB675E4FCAC6300FD90C94EECBC5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -700,20 +609,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		8EE954D0071E7B2E6536F72E98006B17 /* Build configuration list for PBXNativeTarget "LITEventMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585850AF155F5063202D31048EA4380D /* Debug */,
+				2A86222B5859372DB391E8A73428A944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9F97742DF95B44C3EC9D4F61040FE93A /* Build configuration list for PBXNativeTarget "Pods-LITEventMachine_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12BEC7197E30E6D92A13DC49781E8C2E /* Debug */,
 				CF94717FED227813BC0DB4F9B4053634 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B4C8D72FE44CB75C425E59BA08982DEF /* Build configuration list for PBXNativeTarget "LITEventMachine-LITEventMachine" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EAF6C3E522234C236E79739ED298A7CA /* Debug */,
-				67B138311ACAC22A56EAAA020D72E795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
