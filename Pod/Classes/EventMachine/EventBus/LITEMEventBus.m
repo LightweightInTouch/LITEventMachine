@@ -8,7 +8,7 @@
 
 #import "LITEMEventBus.h"
 
-@interface LITEMEventRouter
+@interface LITEMEventRouter : NSObject
 
 - (void)subscribeOnEventWithMessage:(NSString *)message;
 
@@ -24,13 +24,14 @@ void notificationCallback(CFNotificationCenterRef center,
                           void const * object,
                           CFDictionaryRef userInfo) {
 
+    LITEMEventRouter *router = (__bridge LITEMEventRouter *)observer;
     // put it in general bus?
     LITEMEventBase *event = nil;
-    if ([self.generator respondsToSelector:@selector(decodeEventWithMessage:]) {
-        event = [self.generator decodeEventWithMessage:name];
+    if ([router.generator respondsToSelector:@selector(decodeEventWithMessage:)]) {
+        event = [router.generator decodeEventWithMessage:(__bridge NSString *)(name)];
     }
     // fire it inside bus?
-    [bus fireEvent:event];
+    [router.bus fireEvent:event];
 }
 
 - (void)subscribeOnEventWithMessage:(NSString *)message {
@@ -59,7 +60,7 @@ void notificationCallback(CFNotificationCenterRef center,
 - (LITEMEventRouter *)router {
     if (!_router) {
         _router = [LITEMEventRouter new];
-        _router.generator = self.eventFactory;
+        _router.generator = self;
         _router.bus = self;
     }
     return _router;
@@ -115,6 +116,13 @@ void notificationCallback(CFNotificationCenterRef center,
         LITEMBaseListener *listener = [self.listeners objectAtIndex:i];
         [self unsubscribeListener:(listener)];
     }
+    
+    [self unsubscribeRouter];
+}
+
+- (void)unsubscribeRouter {
+    CFNotificationCenterRef const center = CFNotificationCenterGetDarwinNotifyCenter();
+    CFNotificationCenterRemoveEveryObserver(center, (__bridge const void *)(self.router));
 }
 
 - (void)fireEvent:(LITEMEventBase *)event {
@@ -141,6 +149,10 @@ void notificationCallback(CFNotificationCenterRef center,
 
 - (LITEMEventBase *)eventWithType:(NSString *)type {
     return [self.eventFactory eventWithType:type];
+}
+
+- (LITEMEventBase *)decodeEventWithMessage:(NSString *)message {
+    return [self.eventFactory decodeEventWithMessage:message];
 }
 
 @end
