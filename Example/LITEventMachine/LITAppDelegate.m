@@ -60,6 +60,10 @@
 
 - (void)emListenEvent:(LITEMEventBase *)event {
     NSLog(@"this is: %@", event.type);
+    if (event.class == [LITEMEventSayHello class]) {
+        NSLog(@"who is: %@",((LITEMEventSayHello *)event).who);
+    }
+
 }
 
 @end
