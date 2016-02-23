@@ -179,7 +179,7 @@ void notificationCallback(CFNotificationCenterRef center,
 - (void)unsubscribeDelegate:(id<LITEMBaseListenerProtocol>)delegate withName:(NSString *)name {
     
     LITEMBaseListener *listener = nil;
-    NSUInteger index = [self.listeners indexOfObjectPassingTest:^BOOL(LITEMBaseListener   * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    NSUInteger index = [self.listeners indexOfObjectPassingTest:^BOOL(LITEMBaseListener   * /*_Nonnull*/ obj, NSUInteger idx, BOOL * /*_Nonnull*/ stop) {
         return [obj.name isEqualToString:name];
     }];
     
@@ -190,7 +190,7 @@ void notificationCallback(CFNotificationCenterRef center,
     }
     
     self.listeners =
-    [self.listeners filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(LITEMBaseListener * _Nonnull evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
+    [self.listeners filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(LITEMBaseListener * /*_Nonnull*/ evaluatedObject, NSDictionary/*<NSString *,id>*/ * /*_Nullable*/ bindings) {
         return ![evaluatedObject isEqualToListener:listener];
     }]];
 }
