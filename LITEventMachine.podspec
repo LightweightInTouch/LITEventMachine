@@ -8,14 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = "LITEventMachine"
-  s.version          = "0.0.1"
-  s.summary          = "Simple safe wrapper for NSNotificationCenter."
+  s.version          = "0.0.2"
+  s.summary          = "Simple safe wrapper for NSNotificationCenter and Darwin Notifications."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
   For example, you need receive a special event for making some stuff.
   You can make protocols and delegates, but it is boring.
@@ -33,11 +28,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  #s.resource_bundles = {
-  #  'LITEventMachine' => ['Pod/Assets/*.png']
-  #}
-
   s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
