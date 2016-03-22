@@ -25,4 +25,8 @@
     return self.type;
 }
 
+- (NSString *)debugDescription {
+    return self.type;
+}
+
 @end
