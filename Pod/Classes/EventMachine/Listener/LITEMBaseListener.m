@@ -21,7 +21,14 @@
 }
 
 #pragma mark - Listening
-- (void)emListenNotification:(NSNotification *)notification {    
+- (void)emListenNotification:(NSNotification *)notification {
+    if (self.delegate == nil) {
+        if ([self.unsubscriber respondsToSelector:@selector(listenerBecomeStalled:)]) {
+            [self.unsubscriber listenerBecomeStalled:self];
+            return;
+        }
+    }
+    
     if ([self.delegate respondsToSelector:@selector(emListenNotification:)]) {
         [self.delegate emListenNotification:notification];
     }

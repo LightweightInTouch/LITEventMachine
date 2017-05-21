@@ -46,12 +46,15 @@ void notificationCallback(CFNotificationCenterRef center,
 
 @end
 
-@interface LITEMEventBus() <LITEMBaseListenerEventGenerator>
+@interface LITEMEventBus()
 
 @property (nonatomic, strong) NSArray *listeners;
 @property (nonatomic, strong) LITEMEventRouter *router;
 
 @end
+
+@interface LITEMEventBus(LITEMBaseListenerEventGenerator) <LITEMBaseListenerEventGenerator> @end
+@interface LITEMEventBus(LITEMBaseListenerUnsubscriber) <LITEMBaseListenerUnsubscriber> @end
 
 @implementation LITEMEventBus
 
@@ -145,16 +148,6 @@ void notificationCallback(CFNotificationCenterRef center,
     [self unsubscribeAll];
 }
 
-#pragma mark - Delegates / Listener Event Generator
-
-- (LITEMEventBase *)eventWithType:(NSString *)type {
-    return [self.eventFactory eventWithType:type];
-}
-
-- (LITEMEventBase *)decodeEventWithMessage:(NSString *)message {
-    return [self.eventFactory decodeEventWithMessage:message];
-}
-
 @end
 
 @implementation LITEMEventBus (DelegatedSubscriptions)
@@ -195,4 +188,19 @@ void notificationCallback(CFNotificationCenterRef center,
     }]];
 }
 
+@end
+
+@implementation LITEMEventBus (LITEMBaseListenerEventGenerator)
+- (LITEMEventBase *)eventWithType:(NSString *)type {
+    return [self.eventFactory eventWithType:type];
+}
+
+- (LITEMEventBase *)decodeEventWithMessage:(NSString *)message {
+    return [self.eventFactory decodeEventWithMessage:message];
+}
+@end
+@implementation LITEMEventBus (LITEMBaseListenerUnsubscriber)
+- (void)listenerBecomeStalled:(LITEMBaseListener *)listener {
+    [self unsubscribeListener:listener];
+}
 @end

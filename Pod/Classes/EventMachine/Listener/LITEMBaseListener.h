@@ -26,6 +26,13 @@
 
 @end
 
+@class LITEMBaseListener;
+@protocol LITEMBaseListenerUnsubscriber <NSObject>
+
+- (void)listenerBecomeStalled:(LITEMBaseListener *)listener;
+
+@end
+
 @interface LITEMBaseListener : NSObject<LITEMBaseListenerProtocol>
 
 @property (copy, nonatomic) NSString *name;
@@ -33,6 +40,7 @@
 @property (copy, nonatomic) void (^completionBlock)(NSNotification *notification);
 @property (weak, nonatomic) id<LITEMBaseListenerProtocol> delegate;
 @property (weak, nonatomic) id<LITEMBaseListenerEventGenerator> generator;
+@property (weak, nonatomic) id<LITEMBaseListenerUnsubscriber> unsubscriber;
 
 #pragma mark - Equality
 - (BOOL)isEqualToListener:(LITEMBaseListener *)listener;
