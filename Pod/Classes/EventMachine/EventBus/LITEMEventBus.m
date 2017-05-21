@@ -86,6 +86,7 @@ void notificationCallback(CFNotificationCenterRef center,
 - (void)subscribeListener:(LITEMBaseListener *)listener onEvent:(LITEMEventBase *)event {
 
     listener.generator = self;
+    listener.unsubscriber = self;
     self.listeners = [self.listeners arrayByAddingObject:listener];
 
     // add to notification center
