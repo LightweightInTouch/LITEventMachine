@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LITEventMachine"
-  s.version          = "0.0.3"
+  s.version          = "0.0.4"
   s.summary          = "Simple safe wrapper for NSNotificationCenter and Darwin Notifications."
 
   s.description      = <<-DESC
