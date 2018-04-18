@@ -166,6 +166,11 @@ void notificationCallback(CFNotificationCenterRef center,
     return listener;
 }
 
+- (void)subscribeDelegate:(id<LITEMBaseListenerProtocol>)delegate withName:(NSString *)name onEventWithMessage:(NSString *)message {
+    LITEMBaseListener *listener = [self listenerForDelegate:delegate withName:name];
+    [self subscribeListener:listener onEventWithMessage:message];
+}
+
 - (void)subscribeDelegate:(id<LITEMBaseListenerProtocol>)delegate withName:(NSString *)name onEvent:(LITEMEventBase *)event {
     LITEMBaseListener *listener = [self listenerForDelegate:delegate withName:name];
     [self subscribeListener:listener onEvent:event];

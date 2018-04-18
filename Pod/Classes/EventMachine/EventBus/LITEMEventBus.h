@@ -32,6 +32,7 @@
 
 @interface LITEMEventBus (DelegatedSubscriptions)
 
+- (void)subscribeDelegate:(id<LITEMBaseListenerProtocol>)delegate withName:(NSString *)name onEventWithMessage:(NSString *)message;
 - (void)subscribeDelegate:(id<LITEMBaseListenerProtocol>)delegate withName:(NSString *)name onEvent:(LITEMEventBase *)event;
 - (void)subscribeDelegate:(id<LITEMBaseListenerProtocol>)delegate withName:(NSString *)name onEventType:(NSString *)type;
 - (void)unsubscribeDelegate:(id<LITEMBaseListenerProtocol>)delegate withName:(NSString *)name;
