@@ -17,7 +17,9 @@
 @end
 
 @implementation LITEMEventRouter
-
+- (CFNotificationCenterRef)center {
+    return CFNotificationCenterGetLocalCenter();
+}
 void notificationCallback(CFNotificationCenterRef center,
                           void * observer,
                           CFStringRef name,
@@ -35,13 +37,24 @@ void notificationCallback(CFNotificationCenterRef center,
 }
 
 - (void)subscribeOnEventWithMessage:(NSString *)message {
-    CFNotificationCenterRef const center = CFNotificationCenterGetDarwinNotifyCenter();
+    CFNotificationCenterRef const center = self.center;
     CFNotificationCenterAddObserver(center,
                                     (__bridge const void *)(self),
                                     notificationCallback,
                                     (__bridge CFStringRef)message,
                                     NULL,
                                     CFNotificationSuspensionBehaviorDeliverImmediately);
+}
+
+- (void)fireEventWithMessage:(NSString *)message {
+    CFNotificationCenterRef const center = self.center;
+    CFNotificationCenterPostNotification(center, (__bridge CFStringRef)message, NULL, NULL, YES);
+    [self subscribeOnEventWithMessage:message];
+}
+
+- (void)unsubscribe {
+    CFNotificationCenterRef const center = self.center;
+    CFNotificationCenterRemoveEveryObserver(center, (__bridge const void *)(self));
 }
 
 @end
@@ -131,8 +144,7 @@ void notificationCallback(CFNotificationCenterRef center,
 }
 
 - (void)unsubscribeRouter {
-    CFNotificationCenterRef const center = CFNotificationCenterGetDarwinNotifyCenter();
-    CFNotificationCenterRemoveEveryObserver(center, (__bridge const void *)(self.router));
+    [self.router unsubscribe];
 }
 
 - (void)fireEvent:(LITEMEventBase *)event {
@@ -141,10 +153,7 @@ void notificationCallback(CFNotificationCenterRef center,
 
 - (void)fireEventWithMessage:(NSString *)message {
     // fire event, bus will handle it?
-    CFNotificationCenterRef const center = CFNotificationCenterGetDarwinNotifyCenter();
-    CFNotificationCenterPostNotification(center, (__bridge CFStringRef)message, NULL, NULL, YES);
-    [self.router subscribeOnEventWithMessage:message];
-
+    [self.router fireEventWithMessage:message];
 }
 
 - (void)fireEventWithType:(NSString *)type {
