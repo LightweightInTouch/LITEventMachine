@@ -83,6 +83,12 @@ void notificationCallback(CFNotificationCenterRef center,
     return _listeners;
 }
 
+- (void)subscribeListener:(LITEMBaseListener *)listener onEventWithMessage:(NSString *)message {
+    LITEMEventBase *event = [self decodeEventWithMessage:message];
+    [self.router subscribeOnEventWithMessage:message];
+    [self subscribeListener:listener onEvent:event];
+}
+
 - (void)subscribeListener:(LITEMBaseListener *)listener onEvent:(LITEMEventBase *)event {
 
     listener.generator = self;

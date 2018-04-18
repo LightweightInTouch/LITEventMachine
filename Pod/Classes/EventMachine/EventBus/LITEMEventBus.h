@@ -16,12 +16,11 @@
 @property (strong, nonatomic) LITEMBaseEventFactory *eventFactory;
 
 #pragma mark - Subscription
+- (void)subscribeListener:(LITEMBaseListener *)listener onEventWithMessage:(NSString *)message;
 - (void)subscribeListener:(LITEMBaseListener *)listener onEvent:(LITEMEventBase *)event;
-
 - (void)subscribeListener:(LITEMBaseListener *)listener onEventWithType:(NSString *)type;
 
 - (void)unsubscribeListener:(LITEMBaseListener *)listener;
-
 - (void)unsubscribeAll;
 
 #pragma mark - Fire
